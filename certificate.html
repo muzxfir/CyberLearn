@@ -1,96 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Certificate | CyberLearn</title>
-<link rel="stylesheet" href="style.css">
-</head>
+function completeLesson(){
 
-<body>
+let progress = localStorage.getItem("progress");
 
-<header>
-<h1>🏆 CyberLearn Certificate</h1>
-<p>Ethical Hacking Course</p>
-</header>
-
-
-<section>
-
-<div class="certificate">
-
-
-<h2>Certificate of Completion</h2>
-
-
-<p>
-This certificate is proudly presented to
-</p>
-
-
-<h1 id="studentName">
-Student Name
-</h1>
-
-
-<p>
-For successfully completing the
-</p>
-
-
-<h2>
-🛡️ Ethical Hacking & Cyber Security Course
-</h2>
-
-
-<p>
-Modules Completed:
-</p>
-
-
-<ul>
-<li>🌐 Networking Basics</li>
-<li>🐧 Linux Basics</li>
-<li>🐍 Python Security</li>
-<li>🔐 Web Security</li>
-</ul>
-
-
-<h3>
-Congratulations 🎉
-</h3>
-
-
-<p>
-CyberLearn Academy
-</p>
-
-
-<button onclick="window.print()">
-🖨️ Download / Print Certificate
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-<script>
-
-let name = localStorage.getItem("student");
-
-
-if(name){
-
-document.getElementById("studentName").innerHTML =
-name;
-
+if(!progress){
+    progress = 0;
 }
 
+progress = Number(progress) + 25;
 
-</script>
+if(progress > 100){
+    progress = 100;
+}
 
+localStorage.setItem("progress", progress);
 
-</body>
-</html>
+alert("Lesson Completed ✅ Progress: " + progress + "%");
+
+}
