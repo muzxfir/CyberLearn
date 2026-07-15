@@ -1,0 +1,20 @@
+function completeLesson(){
+
+let progress =
+localStorage.getItem("progress");
+
+if(!progress){
+progress=0;
+}
+
+progress = Number(progress)+25;
+
+if(progress>100){
+progress=100;
+}
+
+localStorage.setItem("progress",progress);
+
+alert("Lesson Completed ✅ Progress: "+progress+"%");
+
+}
