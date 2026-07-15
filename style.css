@@ -41,6 +41,8 @@ nav{
     background:#111827;
     padding:15px;
     text-align:center;
+    position:sticky;
+    top:0;
 }
 
 
@@ -48,6 +50,7 @@ nav a{
     color:white;
     text-decoration:none;
     margin:15px;
+    font-weight:bold;
 }
 
 
@@ -57,12 +60,12 @@ nav a:hover{
 
 
 
-/* Sections */
+/* Main Section */
 
 section{
     max-width:1100px;
     margin:auto;
-    padding:35px 20px;
+    padding:40px 20px;
 }
 
 
@@ -84,6 +87,7 @@ h2{
 
 
 .card{
+
     display:block;
     background:#1e293b;
     color:white;
@@ -92,13 +96,17 @@ h2{
     text-decoration:none;
     border:1px solid #334155;
     transition:0.3s;
+
 }
 
 
 .card:hover{
+
     transform:translateY(-8px);
     border-color:#22c55e;
-    box-shadow:0 0 15px #22c55e;
+    box-shadow:
+    0 0 15px #22c55e;
+
 }
 
 
@@ -108,18 +116,21 @@ h2{
 
 
 
-/* Progress */
+/* Progress Bar */
 
 .progress{
+
     width:100%;
     height:30px;
     background:#1e293b;
     border-radius:20px;
     overflow:hidden;
+
 }
 
 
 .bar{
+
     height:100%;
     width:0%;
     background:#22c55e;
@@ -127,6 +138,7 @@ h2{
     text-align:center;
     font-weight:bold;
     padding-top:5px;
+
 }
 
 
@@ -134,15 +146,20 @@ h2{
 /* Lesson Content */
 
 ul{
+
     line-height:2;
+
 }
 
 
 pre{
+
     background:#000;
     color:#22c55e;
     padding:20px;
     border-radius:10px;
+    overflow:auto;
+
 }
 
 
@@ -151,23 +168,28 @@ pre{
 
 .certificate{
 
-background:#1e293b;
-padding:40px;
-border-radius:20px;
-text-align:center;
-border:2px solid #22c55e;
-box-shadow:0 0 20px #22c55e;
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    border:2px solid #22c55e;
+    box-shadow:
+    0 0 20px #22c55e;
 
 }
 
 
 .certificate h1{
+
     color:#22c55e;
+
 }
 
 
 .certificate li{
+
     list-style:none;
+
 }
 
 
@@ -176,21 +198,43 @@ box-shadow:0 0 20px #22c55e;
 
 button{
 
-background:#22c55e;
-color:#020617;
-padding:12px 25px;
-border:none;
-border-radius:10px;
-font-weight:bold;
-cursor:pointer;
-margin-top:20px;
+    background:#22c55e;
+    color:#020617;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:20px;
 
 }
 
 
 button:hover{
 
-box-shadow:0 0 15px #22c55e;
+    box-shadow:
+    0 0 15px #22c55e;
+
+}
+
+
+
+/* Profile */
+
+.profile{
+
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #334155;
+
+}
+
+
+.profile h2{
+
+    color:#22c55e;
 
 }
 
@@ -200,17 +244,18 @@ box-shadow:0 0 15px #22c55e;
 
 footer{
 
-text-align:center;
-padding:20px;
-background:#0f172a;
+    text-align:center;
+    padding:25px;
+    background:#0f172a;
+    margin-top:30px;
 
 }
 
 
 footer a{
 
-color:#22c55e;
-text-decoration:none;
+    color:#22c55e;
+    text-decoration:none;
 
 }
 
@@ -226,13 +271,17 @@ header h1{
 
 
 nav a{
+
     display:block;
     margin:10px;
+
 }
 
 
 section{
+
     padding:20px 15px;
+
 }
 
-    }
+}
