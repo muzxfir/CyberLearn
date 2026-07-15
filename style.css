@@ -19,6 +19,15 @@ header{
 }
 
 
+.logo{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-bottom:15px;
+    box-shadow:0 0 20px #22c55e;
+}
+
+
 header h1{
     color:#22c55e;
     font-size:45px;
@@ -60,7 +69,7 @@ nav a:hover{
 
 
 
-/* Main Section */
+/* Sections */
 
 section{
     max-width:1100px;
@@ -76,7 +85,7 @@ h2{
 
 
 
-/* Cards */
+/* Course Cards */
 
 .container{
     display:grid;
@@ -87,7 +96,6 @@ h2{
 
 
 .card{
-
     display:block;
     background:#1e293b;
     color:white;
@@ -96,17 +104,13 @@ h2{
     text-decoration:none;
     border:1px solid #334155;
     transition:0.3s;
-
 }
 
 
 .card:hover{
-
     transform:translateY(-8px);
     border-color:#22c55e;
-    box-shadow:
-    0 0 15px #22c55e;
-
+    box-shadow:0 0 15px #22c55e;
 }
 
 
@@ -116,21 +120,18 @@ h2{
 
 
 
-/* Progress Bar */
+/* Progress */
 
 .progress{
-
     width:100%;
     height:30px;
     background:#1e293b;
     border-radius:20px;
     overflow:hidden;
-
 }
 
 
 .bar{
-
     height:100%;
     width:0%;
     background:#22c55e;
@@ -138,28 +139,18 @@ h2{
     text-align:center;
     font-weight:bold;
     padding-top:5px;
-
 }
 
 
 
-/* Lesson Content */
+/* Profile */
 
-ul{
-
-    line-height:2;
-
-}
-
-
-pre{
-
-    background:#000;
-    color:#22c55e;
-    padding:20px;
-    border-radius:10px;
-    overflow:auto;
-
+.profile{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #334155;
 }
 
 
@@ -167,29 +158,28 @@ pre{
 /* Certificate */
 
 .certificate{
-
     background:#1e293b;
     padding:40px;
     border-radius:20px;
     text-align:center;
     border:2px solid #22c55e;
-    box-shadow:
-    0 0 20px #22c55e;
-
+    box-shadow:0 0 20px #22c55e;
 }
 
 
-.certificate h1{
 
+/* Lesson Pages */
+
+ul{
+    line-height:2;
+}
+
+
+pre{
+    background:#000;
     color:#22c55e;
-
-}
-
-
-.certificate li{
-
-    list-style:none;
-
+    padding:20px;
+    border-radius:10px;
 }
 
 
@@ -197,7 +187,6 @@ pre{
 /* Buttons */
 
 button{
-
     background:#22c55e;
     color:#020617;
     padding:12px 25px;
@@ -206,36 +195,11 @@ button{
     font-weight:bold;
     cursor:pointer;
     margin-top:20px;
-
 }
 
 
 button:hover{
-
-    box-shadow:
-    0 0 15px #22c55e;
-
-}
-
-
-
-/* Profile */
-
-.profile{
-
-    background:#1e293b;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    border:1px solid #334155;
-
-}
-
-
-.profile h2{
-
-    color:#22c55e;
-
+    box-shadow:0 0 15px #22c55e;
 }
 
 
@@ -243,20 +207,16 @@ button:hover{
 /* Footer */
 
 footer{
-
     text-align:center;
     padding:25px;
     background:#0f172a;
     margin-top:30px;
-
 }
 
 
 footer a{
-
     color:#22c55e;
     text-decoration:none;
-
 }
 
 
@@ -271,17 +231,13 @@ header h1{
 
 
 nav a{
-
     display:block;
     margin:10px;
-
 }
 
 
 section{
-
     padding:20px 15px;
-
 }
 
 }
