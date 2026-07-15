@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Profile | CyberLearn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>👤 Student Profile</h1>
+<p>CyberLearn Account</p>
+
+</header>
+
+
+
+<section>
+
+
+<div class="profile">
+
+
+<h2 id="name">
+Student Name
+</h2>
+
+
+<p>
+🛡️ Course: Ethical Hacking & Cyber Security
+</p>
+
+
+<p>
+📚 Level: Beginner
+</p>
+
+
+<p>
+📊 Progress:
+<span id="progress">
+0%
+</span>
+</p>
+
+
+
+<button onclick="logout()">
+Logout
+</button>
+
+
+</div>
+
+
+
+</section>
+
+
+
+<script>
+
+
+let user = localStorage.getItem("student");
+
+let progress = localStorage.getItem("progress");
+
+
+if(user){
+
+document.getElementById("name").innerHTML =
+user;
+
+}
+
+
+if(progress){
+
+document.getElementById("progress").innerHTML =
+progress+"%";
+
+}
+
+
+
+function logout(){
+
+localStorage.clear();
+
+window.location="login.html";
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
