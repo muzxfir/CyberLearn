@@ -274,3 +274,10 @@ footer{
 display:none!important;
 
 }
+    
+.path{
+    text-align:center;
+    color:#22c55e;
+    font-weight:bold;
+    font-size:18px;
+}
