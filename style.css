@@ -414,22 +414,17 @@ padding:20px 15px;
 }
 
 .brand{
-
-text-decoration:none;
-color:inherit;
-
+    text-decoration:none !important;
+    color:inherit;
 }
 
 
 .brand h1{
-
-cursor:pointer;
-
+    text-decoration:none !important;
+    border:none;
 }
 
 
-.brand h1:hover{
-
-color:#22c55e;
-
+.brand:hover{
+    text-decoration:none;
 }
