@@ -9,43 +9,85 @@
 
 <header>
 <h1>🏆 CyberLearn Certificate</h1>
-<p>Ethical Hacking Course Completion</p>
+<p>Ethical Hacking Course</p>
 </header>
 
 
 <section>
 
-<div class="card">
+<div class="certificate">
 
-<h2 id="certName">
+
+<h2>Certificate of Completion</h2>
+
+
+<p>
+This certificate is proudly presented to
+</p>
+
+
+<h1 id="studentName">
 Student Name
+</h1>
+
+
+<p>
+For successfully completing the
+</p>
+
+
+<h2>
+🛡️ Ethical Hacking & Cyber Security Course
 </h2>
 
-<p>
-Has successfully completed CyberLearn Ethical Hacking modules.
-</p>
 
 <p>
-🌐 Networking<br>
-🐧 Linux Basics<br>
-🐍 Python Security<br>
-🔐 Web Security
+Modules Completed:
 </p>
 
-<h3>Congratulations 🎉</h3>
+
+<ul>
+<li>🌐 Networking Basics</li>
+<li>🐧 Linux Basics</li>
+<li>🐍 Python Security</li>
+<li>🔐 Web Security</li>
+</ul>
+
+
+<h3>
+Congratulations 🎉
+</h3>
+
+
+<p>
+CyberLearn Academy
+</p>
+
+
+<button onclick="window.print()">
+🖨️ Download / Print Certificate
+</button>
+
 
 </div>
 
+
 </section>
+
 
 
 <script>
 
 let name = localStorage.getItem("student");
 
+
 if(name){
-document.getElementById("certName").innerHTML=name;
+
+document.getElementById("studentName").innerHTML =
+name;
+
 }
+
 
 </script>
 
