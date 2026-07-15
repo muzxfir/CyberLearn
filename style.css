@@ -14,7 +14,7 @@ body{
 
 header{
     text-align:center;
-    padding:50px 20px;
+    padding:45px 20px;
     background:#0f172a;
 }
 
@@ -31,15 +31,12 @@ header{
 header h1{
     color:#22c55e;
     font-size:45px;
-    text-shadow:
-    0 0 10px #22c55e,
-    0 0 25px #22c55e;
+    text-shadow:0 0 20px #22c55e;
 }
 
 
 header p{
     color:#cbd5e1;
-    font-size:18px;
 }
 
 
@@ -58,7 +55,7 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-    margin:15px;
+    margin:12px;
     font-weight:bold;
 }
 
@@ -79,31 +76,29 @@ section{
 
 
 h2{
-    color:#22c55e;
     text-align:center;
+    color:#22c55e;
 }
 
 
 
-/* Course Cards */
+/* Cards */
 
 .container{
     display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
 
 .card{
-    display:block;
     background:#1e293b;
     color:white;
     padding:25px;
     border-radius:15px;
     text-decoration:none;
     border:1px solid #334155;
-    transition:0.3s;
+    transition:.3s;
 }
 
 
@@ -150,7 +145,6 @@ h2{
     padding:30px;
     border-radius:20px;
     text-align:center;
-    border:1px solid #334155;
 }
 
 
@@ -159,7 +153,7 @@ h2{
 
 .certificate{
     background:#1e293b;
-    padding:40px;
+    padding:35px;
     border-radius:20px;
     text-align:center;
     border:2px solid #22c55e;
@@ -167,8 +161,15 @@ h2{
 }
 
 
+.certificate-logo{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
 
-/* Lesson Pages */
+
+
+/* Lesson */
 
 ul{
     line-height:2;
@@ -194,12 +195,25 @@ button{
     border-radius:10px;
     font-weight:bold;
     cursor:pointer;
-    margin-top:20px;
 }
 
 
 button:hover{
     box-shadow:0 0 15px #22c55e;
+}
+
+
+
+/* Page Navigation */
+
+.page-nav{
+    text-align:center;
+    margin:30px 0;
+}
+
+
+.page-nav button{
+    margin:5px;
 }
 
 
@@ -210,13 +224,6 @@ footer{
     text-align:center;
     padding:25px;
     background:#0f172a;
-    margin-top:30px;
-}
-
-
-footer a{
-    color:#22c55e;
-    text-decoration:none;
 }
 
 
@@ -238,6 +245,76 @@ nav a{
 
 section{
     padding:20px 15px;
+}
+
+}
+
+
+
+/* Certificate PDF Auto Fit */
+
+@media print{
+
+@page{
+    size:A4;
+    margin:10mm;
+}
+
+
+body{
+    background:white;
+    color:black;
+}
+
+
+header,
+nav,
+footer,
+button{
+    display:none !important;
+}
+
+
+section{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+
+.certificate{
+
+    width:100%;
+    max-height:270mm;
+    padding:25px;
+    margin:0 auto;
+    box-shadow:none;
+    page-break-inside:avoid;
+
+}
+
+
+.certificate h1{
+    font-size:28px;
+}
+
+
+.certificate h2{
+    font-size:20px;
+}
+
+
+.certificate p,
+.certificate li{
+    font-size:13px;
+}
+
+
+.certificate-logo{
+
+    width:60px;
+    height:60px;
+
 }
 
 }
