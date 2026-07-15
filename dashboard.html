@@ -15,48 +15,79 @@
 
 <section>
 
-<h2>Your Progress</h2>
+<h2>Your Course Progress</h2>
 
 <div class="progress">
-<div class="bar">
-20%
+<div class="bar" id="progressBar">
+0%
 </div>
 </div>
 
 
-<h2>📚 Continue Learning</h2>
+<h2>📚 Modules</h2>
 
 <div class="container">
 
 <a class="card" href="lessons/networking.html">
 <h3>🌐 Networking</h3>
-<p>Completed: 20%</p>
+<p>Module 01</p>
 </a>
 
 
 <a class="card" href="lessons/linux.html">
 <h3>🐧 Linux</h3>
-<p>Start Module</p>
+<p>Module 02</p>
 </a>
 
 
 <a class="card" href="lessons/python.html">
 <h3>🐍 Python</h3>
-<p>Start Module</p>
+<p>Module 03</p>
 </a>
 
 
 <a class="card" href="lessons/web-security.html">
 <h3>🔐 Web Security</h3>
-<p>Start Module</p>
+<p>Module 04</p>
 </a>
 
+
 </div>
+
+
+<br>
+
+<a href="certificate.html">
+<button>
+🏆 View Certificate
+</button>
+</a>
+
 
 </section>
 
 
 <script src="script.js"></script>
+
+<script>
+
+let progress = localStorage.getItem("progress");
+
+if(!progress){
+    progress = 0;
+}
+
+
+document.getElementById("progressBar").style.width =
+progress + "%";
+
+
+document.getElementById("progressBar").innerHTML =
+progress + "%";
+
+
+</script>
+
 
 </body>
 </html>
