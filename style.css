@@ -4,41 +4,52 @@
 
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background:#020617;
     color:#e2e8f0;
 }
 
 
+/* Header */
+
 header{
     text-align:center;
     padding:60px 20px;
-    background:#0f172a;
+    background:linear-gradient(135deg,#020617,#0f172a);
 }
 
 
 header h1{
-    font-size:45px;
+    font-size:48px;
     color:#22c55e;
+    text-shadow:
+    0 0 10px #22c55e,
+    0 0 25px #22c55e;
 }
 
 
 header p{
     font-size:20px;
+    color:#cbd5e1;
 }
 
 
+
+/* Navigation */
+
 nav{
     background:#111827;
-    padding:15px;
+    padding:18px;
     text-align:center;
+    position:sticky;
+    top:0;
 }
 
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:20px;
+    margin:15px;
     font-weight:bold;
 }
 
@@ -48,23 +59,31 @@ nav a:hover{
 }
 
 
+
+/* Sections */
+
 section{
-    padding:35px 20px;
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
+    padding:40px 20px;
 }
 
 
 h2{
     color:#22c55e;
     text-align:center;
+    margin-bottom:25px;
 }
 
 
+
+/* Course Cards */
+
 .container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 
@@ -74,14 +93,17 @@ h2{
     border-radius:15px;
     text-decoration:none;
     color:white;
-    transition:0.3s;
     border:1px solid #334155;
+    transition:0.4s;
+    animation:show 0.8s;
 }
 
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
     border-color:#22c55e;
+    box-shadow:
+    0 0 15px #22c55e;
 }
 
 
@@ -90,9 +112,30 @@ h2{
 }
 
 
+
+/* Animation */
+
+@keyframes show{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+
+/* Progress Bar */
+
 .progress{
-    background:#334155;
-    height:25px;
+    background:#1e293b;
+    height:30px;
     border-radius:20px;
     overflow:hidden;
 }
@@ -102,18 +145,40 @@ h2{
     background:#22c55e;
     width:20%;
     height:100%;
-    text-align:center;
     color:#020617;
+    text-align:center;
     font-weight:bold;
+    padding-top:5px;
 }
 
+
+
+/* Code Box */
+
+pre{
+    background:#000;
+    color:#22c55e;
+    padding:20px;
+    border-radius:10px;
+}
+
+
+
+/* Footer */
 
 footer{
     text-align:center;
+    padding:25px;
     background:#0f172a;
-    padding:20px;
     margin-top:30px;
 }
+
+
+footer a{
+    color:#22c55e;
+    text-decoration:none;
+}
+
 
 
 /* Mobile */
@@ -127,6 +192,10 @@ header h1{
 nav a{
     display:block;
     margin:10px;
+}
+
+section{
+    padding:25px 15px;
 }
 
 }
