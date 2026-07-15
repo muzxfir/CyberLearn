@@ -1,19 +1,180 @@
-function completeLesson(){
+<!DOCTYPE html>
+<html>
 
-let progress = localStorage.getItem("progress");
+<head>
 
-if(!progress){
-    progress = 0;
+<title>Certificate | CyberLearn</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🏆 CyberLearn Certificate</h1>
+
+<p>Ethical Hacking & Cyber Security</p>
+
+</header>
+
+
+
+
+<section>
+
+
+<div class="certificate">
+
+
+
+<h2>
+Certificate of Completion
+</h2>
+
+
+
+<p>
+This certificate is proudly presented to
+</p>
+
+
+
+<h1 id="studentName">
+Student Name
+</h1>
+
+
+
+
+<p>
+For successfully completing the
+</p>
+
+
+
+
+<h2>
+🛡️ Ethical Hacking & Cyber Security Course
+</h2>
+
+
+
+
+<p>
+Completion Date:
+</p>
+
+
+<h3 id="date">
+
+</h3>
+
+
+
+
+<p>
+Certificate ID:
+</p>
+
+
+<h3 id="certificateID">
+
+</h3>
+
+
+
+
+<p>
+Modules Completed:
+</p>
+
+
+
+<ul>
+
+<li>🌐 Networking Basics</li>
+
+<li>🐧 Linux Basics</li>
+
+<li>🐍 Python Security</li>
+
+<li>🔐 Web Security</li>
+
+</ul>
+
+
+
+
+<h2>
+Congratulations 🎉
+</h2>
+
+
+
+<p>
+CyberLearn Academy
+</p>
+
+
+
+
+<button onclick="window.print()">
+
+🖨️ Print / Save Certificate
+
+</button>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<script>
+
+
+let name = localStorage.getItem("student");
+
+
+if(name){
+
+document.getElementById("studentName").innerHTML = name;
+
 }
 
-progress = Number(progress) + 25;
 
-if(progress > 100){
-    progress = 100;
-}
 
-localStorage.setItem("progress", progress);
+let today = new Date();
 
-alert("Lesson Completed ✅ Progress: " + progress + "%");
 
-}
+document.getElementById("date").innerHTML =
+today.toDateString();
+
+
+
+
+let id = "CL-" + Math.floor(Math.random()*100000);
+
+
+document.getElementById("certificateID").innerHTML =
+id;
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
