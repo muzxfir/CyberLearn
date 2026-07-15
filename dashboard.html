@@ -2,8 +2,11 @@
 <html>
 
 <head>
+
 <title>Dashboard | CyberLearn</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 
@@ -12,24 +15,46 @@
 
 <header>
 
+<img src="logo.png" class="logo">
+
 <h1>🛡️ CyberLearn Dashboard</h1>
 
 <p id="welcome">
-Welcome Student
+Welcome Student 👋
 </p>
 
 </header>
 
 
 
-<section>
+<nav>
 
+<a href="index.html">
+🏠 Home
+</a>
+
+<a href="index.html#courses">
+📚 Courses
+</a>
 
 <a href="profile.html">
-<button>
 👤 Profile
-</button>
 </a>
+
+<a href="certificate.html">
+🏆 Certificate
+</a>
+
+<a href="login.html" onclick="logout()">
+🚪 Logout
+</a>
+
+</nav>
+
+
+
+
+<section>
 
 
 <h2>📊 Course Progress</h2>
@@ -42,6 +67,10 @@ Welcome Student
 </div>
 
 </div>
+
+
+
+<br>
 
 
 
@@ -75,3 +104,127 @@ Module 02
 </p>
 
 </a>
+
+
+
+
+<a class="card" href="lessons/python.html">
+
+<h3>🐍 Python Security</h3>
+
+<p>
+Module 03
+</p>
+
+</a>
+
+
+
+
+<a class="card" href="lessons/web-security.html">
+
+<h3>🔐 Web Security</h3>
+
+<p>
+Module 04
+</p>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+<button onclick="openCertificate()">
+
+🏆 Get Certificate
+
+</button>
+
+
+
+</section>
+
+
+
+
+<script>
+
+
+let user = localStorage.getItem("student");
+
+
+if(user){
+
+document.getElementById("welcome").innerHTML =
+"Welcome, " + user + " 👋";
+
+}
+
+
+
+
+let progress = localStorage.getItem("progress");
+
+
+if(!progress){
+
+progress = 0;
+
+}
+
+
+
+document.getElementById("progressBar").style.width =
+progress + "%";
+
+
+document.getElementById("progressBar").innerHTML =
+progress + "%";
+
+
+
+
+
+function openCertificate(){
+
+if(progress == 100){
+
+window.location="certificate.html";
+
+}
+
+else{
+
+alert("🔒 Complete all modules to unlock certificate");
+
+}
+
+}
+
+
+
+
+function logout(){
+
+localStorage.clear();
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
