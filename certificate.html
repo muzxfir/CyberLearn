@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certificate | CyberLearn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🏆 CyberLearn Certificate</h1>
+<p>Ethical Hacking Course Completion</p>
+</header>
+
+
+<section>
+
+<div class="card">
+
+<h2 id="certName">
+Student Name
+</h2>
+
+<p>
+Has successfully completed CyberLearn Ethical Hacking modules.
+</p>
+
+<p>
+🌐 Networking<br>
+🐧 Linux Basics<br>
+🐍 Python Security<br>
+🔐 Web Security
+</p>
+
+<h3>Congratulations 🎉</h3>
+
+</div>
+
+</section>
+
+
+<script>
+
+let name = localStorage.getItem("student");
+
+if(name){
+document.getElementById("certName").innerHTML=name;
+}
+
+</script>
+
+
+</body>
+</html>
