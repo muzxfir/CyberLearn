@@ -1,23 +1,87 @@
 # 🛡️ CyberLearn
 
-Ethical Hacking & Cyber Security Learning Roadmap.
+## Ethical Hacking & Cyber Security Learning Platform
 
-## Modules
+CyberLearn is a beginner-friendly cybersecurity learning website.
+Learn networking, Linux, Python, and web security concepts step by step.
 
-- Networking Basics
-- Linux Basics
-- Python Security
-- Web Security
-- Security Tools
+---
 
-## Goal
+## 🚀 Features
 
-Learn cybersecurity concepts and ethical hacking skills.
+✅ Interactive Course Modules  
+✅ Topic Based Learning  
+✅ Student Dashboard  
+✅ Progress Tracking  
+✅ Certificate System  
+✅ Mobile Friendly Design  
+✅ Dark Cyber Theme  
 
-## Practice
+---
 
-- TryHackMe
-- Hack The Box
-- CTF Challenges
+## 📚 Course Modules
 
-⚠️ Use skills only for legal security testing.
+### 🌐 Module 01 - Networking Basics
+
+Topics:
+- IP Address
+- MAC Address
+- DNS
+- Network Ports
+
+---
+
+### 🐧 Module 02 - Linux Basics
+
+Topics:
+- Terminal Basics
+- Linux Commands
+- File System
+
+---
+
+### 🐍 Module 03 - Python Security
+
+Topics:
+- Python Basics
+- Automation
+- File Handling
+
+---
+
+### 🔐 Module 04 - Web Security
+
+Topics:
+- OWASP Concepts
+- Authentication
+- HTTPS
+
+---
+
+## 🎯 Learning Goal
+
+Learn cybersecurity fundamentals and understand how to protect systems and applications.
+
+⚠️ This platform is for educational purposes only.
+Use security knowledge responsibly.
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
+
+---
+
+## 🌟 Author
+
+CyberLearn Project
+
+---
+
+## 📜 License
+
+Educational Project
