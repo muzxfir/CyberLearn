@@ -1,122 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Dashboard | CyberLearn</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+
 <header>
-<h1>🛡️ Student Dashboard</h1>
-<p id="welcome">Welcome Student</p>
+
+<h1>🛡️ CyberLearn Dashboard</h1>
+
+<p id="welcome">
+Welcome Student
+</p>
+
 </header>
+
 
 
 <section>
 
-<h2>📊 Your Course Progress</h2>
+
+<a href="profile.html">
+<button>
+👤 Profile
+</button>
+</a>
+
+
+<h2>📊 Course Progress</h2>
+
 
 <div class="progress">
-    <div class="bar" id="progressBar">
-        0%
-    </div>
+
+<div class="bar" id="progressBar">
+0%
+</div>
+
 </div>
 
 
-<h2>📚 Course Modules</h2>
+
+<h2>📚 Learning Modules</h2>
+
 
 
 <div class="container">
 
 
+
 <a class="card" href="lessons/networking.html">
+
 <h3>🌐 Networking Basics</h3>
-<p>Module 01</p>
+
+<p>
+Module 01
+</p>
+
 </a>
+
+
 
 
 <a class="card" href="lessons/linux.html">
+
 <h3>🐧 Linux Basics</h3>
-<p>Module 02</p>
+
+<p>
+Module 02
+</p>
+
 </a>
-
-
-<a class="card" href="lessons/python.html">
-<h3>🐍 Python Security</h3>
-<p>Module 03</p>
-</a>
-
-
-<a class="card" href="lessons/web-security.html">
-<h3>🔐 Web Security</h3>
-<p>Module 04</p>
-</a>
-
-
-</div>
-
-
-<br>
-
-
-<button onclick="openCertificate()">
-🏆 View Certificate
-</button>
-
-
-</section>
-
-
-
-<script src="script.js"></script>
-
-
-<script>
-
-
-// Show Progress
-
-let progress = localStorage.getItem("progress");
-
-
-if(!progress){
-    progress = 0;
-}
-
-
-document.getElementById("progressBar").style.width =
-progress + "%";
-
-
-document.getElementById("progressBar").innerHTML =
-progress + "%";
-
-
-
-
-// Certificate Lock
-
-function openCertificate(){
-
-if(progress == 100){
-
-window.location="certificate.html";
-
-}
-
-else{
-
-alert("🔒 Complete all lessons to unlock certificate");
-
-}
-
-}
-
-
-
-</script>
-
-
-</body>
-</html>
